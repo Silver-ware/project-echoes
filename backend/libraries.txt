@@ -1,0 +1,20 @@
+Libraries that is suitable for backend in this project:
+
+1. djangorestframework-simplejwt
+- Provides JWT (JSON Web Token) authentication for Django REST Framework. Suitable for securing APIs and 
+managing user sessions without heavy server-side storage.
+
+2. psycopg2-binary
+- PostgreSQL database adapter for Python. Required if the project uses PostgreSQL as the main database.
+
+3. django-environ
+- Manages environment variables easily. Suitable for storing secrets like API keys, database credentials, 
+and debug settings in .env files.
+
+4. drf-yasg
+- Generates interactive API documentation (Swagger / ReDoc) for Django REST Framework. Helps visualize and
+test API endpoints directly from the browser.
+
+5. django-filter
+- Adds advanced filtering support for Django REST Framework queries. Makes it easy to filter API results
+(e.g., ?tech=django&stack=vue).
