@@ -1,0 +1,22 @@
+# -------------------
+# Vue / Frontend
+# -------------------
+frontend/src/node_modules/
+frontend/src/dist/
+frontend/src/.env
+frontend/src/.vite/
+
+# -------------------
+# Dajngo / Backend
+# -------------------
+backend/__pycache__/
+backend/venv/
+backend/*.pyc
+backend/.env
+backend/db.sqlite3
+
+# -------------------
+# General
+# -------------------
+.DS_Store
+*.log
