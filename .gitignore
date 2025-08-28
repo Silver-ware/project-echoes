@@ -1,10 +1,10 @@
 # -------------------
 # Vue / Frontend
 # -------------------
-frontend/src/node_modules/
-frontend/src/dist/
-frontend/src/.env
-frontend/src/.vite/
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.vite/
 
 # -------------------
 # Django / Backend
