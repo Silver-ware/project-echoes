@@ -18,3 +18,7 @@ test API endpoints directly from the browser.
 5. django-filter
 - Adds advanced filtering support for Django REST Framework queries. Makes it easy to filter API results
 (e.g., ?tech=django&stack=vue).
+
+6. gunicorn
+
+7. python-dotenv

@@ -1,0 +1,27 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# Local environment variables
+<<<<<<< HEAD
+.env*
+=======
+.env
+>>>>>>> 9819d03adb0acdf7556563ea978190449a5dd9b7
+
+# Database
+db.sqlite3
+
+# Django static / media
+/staticfiles/
+/media/
+
+# IDE / OS files
+*.swp
+*.swo
+.DS_Store
