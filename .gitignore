@@ -7,7 +7,7 @@ frontend/src/.env
 frontend/src/.vite/
 
 # -------------------
-# Dajngo / Backend
+# Django / Backend
 # -------------------
 backend/__pycache__/
 backend/venv/
