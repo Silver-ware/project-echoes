@@ -1,0 +1,9 @@
+Libraries that is suitable for frontend in this project:
+
+1. axios
+- Promise-based HTTP client for JavaScript/TypeScript. Suitable for sending API requests to the Django
+backend and handling responses easily.
+
+2. zod
+- Type-safe schema validation library. Suitable for validating frontend form inputs and API responses,
+ensuring your data matches expected types.
