@@ -8,7 +8,7 @@ __pycache__/
 venv/
 
 # Local environment variables
-.env
+.env*
 
 # Database
 db.sqlite3
