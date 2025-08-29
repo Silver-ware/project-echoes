@@ -1,0 +1,30 @@
+{
+  "django": {
+    "ignore_dirs": [".git", "node_modules", "__pycache__"],
+    "ignore_files": ["*.log", "*.md", "*.lock"],
+    "include_extensions": ["py", "html", "css", "js"],
+    "include_paths": ["views", "models", "urls", "templates", "static"]
+  },
+  "vue": {
+    "ignore_dirs": [".git", "node_modules", "dist"],
+    "ignore_files": ["*.log", "*.md", "*.lock"],
+    "include_extensions": ["vue", "js", "ts", "css", "html"]
+  },
+  "node": {
+    "ignore_dirs": [".git", "node_modules", "dist"],
+    "ignore_files": ["*.log", "*.md", "*.lock"],
+    "include_extensions": ["js", "ts", "json"]
+  },
+  "react": {
+    "ignore_dirs": [".git", "node_modules", "build"],
+    "ignore_files": ["*.log", "*.md", "*.lock"],
+    "include_extensions": ["js", "jsx", "ts", "tsx", "css", "html"],
+    "include_paths": ["src"]
+  },
+  "nextjs": {
+    "ignore_dirs": [".git", "node_modules", ".next", "dist"],
+    "ignore_files": ["*.log", "*.md", "*.lock"],
+    "include_extensions": ["js", "jsx", "ts", "tsx", "css", "html", "mdx"],
+    "include_paths": ["pages", "app", "components"]
+  }
+}
