@@ -1,11 +1,29 @@
-<script setup lang="ts"></script>
+<script setup>
+import { ref, onMounted } from "vue"
+import axios from "axios"
+
+const candidateFiles = ref([])
+
+onMounted(async () => {
+  try {
+    const response = await axios.get("http://127.0.0.1:8000/api/candidates")
+    candidateFiles.value = response.data.results
+    console.log(candidateFiles.value);
+  } catch (error) {
+    console.error("Error fetching data:", error)
+  }
+})
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div>
+    <h1>Candidate Files</h1>
+    <ul>
+      <li v-for="file in candidateFiles" :key="file?.id">
+        <strong>{{ file?.file_path || "No path" }}</strong>
+        ({{ file?.language || "Unknown" }})
+        <pre>{{file.code}}</pre>
+      </li>
+    </ul>
+  </div>
 </template>
-
-<style scoped></style>
