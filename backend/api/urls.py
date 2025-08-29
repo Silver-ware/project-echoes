@@ -1,6 +1,8 @@
 from django.urls import path
-from .views import hellow_world
+from rest_framework.routers import DefaultRouter
+from .views import CandidateFileViewSet
 
-urlpatterns = [
-    path("hello/", hellow_world),
-]
+router = DefaultRouter()
+router.register(r'candidates', CandidateFileViewSet, basename='candidatefile')
+
+urlpatterns = router.urls
