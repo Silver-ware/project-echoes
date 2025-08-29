@@ -1,22 +1,22 @@
 <script setup>
-import { ref, onMounted } from "vue"
-import axios from "axios"
+// import { ref, onMounted } from "vue"
+// import axios from "axios"
 
-const candidateFiles = ref([])
+// const candidateFiles = ref([])
 
-onMounted(async () => {
-  try {
-    const response = await axios.get("http://127.0.0.1:8000/api/candidates")
-    candidateFiles.value = response.data.results
-    console.log(candidateFiles.value);
-  } catch (error) {
-    console.error("Error fetching data:", error)
-  }
-})
+// onMounted(async () => {
+//   try {
+//     const response = await axios.get("http://127.0.0.1:8000/api/candidates")
+//     candidateFiles.value = response.data.results
+//     console.log(candidateFiles.value);
+//   } catch (error) {
+//     console.error("Error fetching data:", error)
+//   }
+// })
 </script>
 
 <template>
-  <div>
+  <!-- <div>
     <h1>Candidate Files</h1>
     <ul>
       <li v-for="file in candidateFiles" :key="file?.id">
@@ -25,5 +25,6 @@ onMounted(async () => {
         <pre>{{file.code}}</pre>
       </li>
     </ul>
-  </div>
+  </div> -->
+  <router-view/>
 </template>
